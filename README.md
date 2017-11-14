@@ -1,4 +1,4 @@
-# DabianDockerMac
+# DebianDockerMac
 Virtualbox appliance running Debian with Docker for Mac.
 The virtual machine contains docker, docker-compose and a NFS server to locally mount the docker user's home folder.
 
@@ -14,7 +14,7 @@ The virtual machine contains docker, docker-compose and a NFS server to locally 
         2. IPv4 Network Mask: 255.255.255.0
     2. On DHPC Server tab:
         1. Uncheck "Enable Server"
-3. Download the [latest release](https://github.com/esimonetti/DabianDockerMac/releases/latest) of this git repository
+3. Download the [latest release](https://github.com/esimonetti/DebianDockerMac/releases/latest) of this git repository
 4. Import the downloaded VirtualBox appliance by accessing the menu File -> Import Appliance and follow the prompts
 5. Access the network configuration of the VirtualBox imported appliance by right clicking on the virtual machine -> Settings -> Network
     1. On the Adapter 1 tab:
