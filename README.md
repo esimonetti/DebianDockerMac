@@ -3,7 +3,8 @@ Virtualbox appliance running Debian with Docker for Mac.
 The virtual machine contains docker, docker-compose and a NFS server to locally mount the docker user's home folder.
 
 ## Pre-requisites
-Installation of [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* A Mac
+* Installation of [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 ## Installation and configuration
 1. Add entry on /etc/hosts - need to use sudo to edit the file: `10.10.10.10 docker.local`
@@ -36,7 +37,7 @@ To shutdown the running virtual machine click the X on the running virtual machi
 To ssh into the virtual machine run `ssh docker@docker.local`
 
 ### NFS mount
-To mount and access the virtual machine folder `/home/docker` from your MAC complete the following steps after every boot:
+To mount and access the virtual machine folder `/home/docker` from your Mac complete the following steps after every boot:
 1. Open Finder
 2. Access the menu Go -> Connect to Server
 3. On Server Address enter: `nfs://docker.local:/home/docker`
