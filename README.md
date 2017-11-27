@@ -9,8 +9,8 @@ The virtual machine contains docker, docker-compose and a NFS server to locally 
 ## Installation and configuration
 1. Make sure no other VirtualBox networks adapter are on the subnet 10.10.10.x or you do not run any internal network on that subnet (the routing table be checked with `netstat -rn` and the routing for the subnet 10.10.10.x if exists can be found with `netstat -rn | grep 10.10.10`)
 2. Add entry on /etc/hosts - need to use sudo to edit the file: `10.10.10.10 docker.local`
-3. Access VirtualBox's network configuration for the Host-only Networks adapter `vboxnet0` by accessing the menu VirtualBox -> Preferences -> Network -> Host-only Networks
-    1. On Adapter tab:
+3. Access VirtualBox's network configuration for the Host Network adapter `vboxnet0`. Depending on the installed version of VirtualBox it can be accessed via the top-right icon Global Tools -> Host Network Manager or via the menu VirtualBox -> Preferences -> Network -> Host-only Networks
+    1. On Adapter tab configure manually the followings:
         1. IPv4 Address: 10.10.10.1
         2. IPv4 Network Mask: 255.255.255.0
     2. On DHPC Server tab:
