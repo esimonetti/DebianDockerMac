@@ -13,7 +13,12 @@ The virtual machine contains docker, docker-compose and a NFS server to locally 
     1. On Adapter tab configure manually the followings:
         1. IPv4 Address: 10.10.10.1
         2. IPv4 Network Mask: 255.255.255.0
-    2. On DHPC Server tab:
+   
+    ## For versions above 6.1.28 create the file etc/vbox/networks.conf and add the line below to alow the IPv4 range
+
+           * 10.0.0.0/8
+    
+     2. On DHPC Server tab:
         1. Uncheck "Enable Server"
 4. Download the [latest release](https://github.com/esimonetti/DebianDockerMac/releases/latest) of this git repository
 5. Import the downloaded VirtualBox appliance by accessing the menu File -> Import Appliance and follow the prompts
