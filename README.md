@@ -14,7 +14,7 @@ The virtual machine contains docker, docker-compose and a NFS server to locally 
         1. IPv4 Address: 10.10.10.1
         2. IPv4 Network Mask: 255.255.255.0
    
-    ## For versions above 6.1.28 create the file etc/vbox/networks.conf and add the line below to alow the IPv4 range
+    ## For versions above 6.1.28 create the file etc/vbox/networks.conf and add the line below to allow the IPv4 range
 
            * 10.0.0.0/8
     
